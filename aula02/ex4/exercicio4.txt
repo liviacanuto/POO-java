@@ -1,0 +1,9 @@
+A Lista é uma estrutura de dados que pode ser representada computacionalmente de
+diferentes maneiras, por exemplo, um vetor, uma lista encadeada dinâmica, uma árvore,
+um hash, entre outras maneiras. A Lista, genericamente, pode ser vista como um tipo
+abstrato de dados em que as operações são conhecidas e comuns a qualquer tipo de
+implementação ou representação computacional. Faça a modelagem Orientada a Objetos 
+do tipo abstrato de dados de uma Lista, a qual possui elementos armazenados e as
+seguintes operações: inicializar lista, verificar se lista está vazia, verificar se a lista está
+cheia, adicionar um elemento, recuperar posição de um elemento, remover um elemento.
+Considere uma lista estática em vetor.
