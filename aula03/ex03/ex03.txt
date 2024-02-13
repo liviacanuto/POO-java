@@ -1,0 +1,9 @@
+
+Eletrodoméstico: Telefone Sem Fio
+Potência do aparelho: P=3.0 watts;
+Tempo de utilização do aparelho: 24.0 horas/dia
+Watts/Dia = 72.0 W
+Watts/Mês = 2160.0 W
+Watts/Ano = 25920.0 W
+Preço do Kwatt R$ 0.27
+Gasto mensal é: R$ 0.58320004
