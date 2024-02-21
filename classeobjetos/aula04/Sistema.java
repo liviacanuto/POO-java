@@ -1,4 +1,4 @@
-package aula04;
+package classeobjetos.aula04;
 
 public class Sistema {
     private int MAX = 3;

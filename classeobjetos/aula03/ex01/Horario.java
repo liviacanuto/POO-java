@@ -1,4 +1,4 @@
-package aula03.ex01;
+package classeobjetos.aula03.ex01;
 
 public class Horario {
     private int hora;

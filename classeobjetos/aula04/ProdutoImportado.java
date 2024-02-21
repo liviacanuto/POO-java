@@ -1,27 +1,31 @@
-package aula04;
+package classeobjetos.aula04;
 
-public class ProdutoEstadual {
+public class ProdutoImportado {
     private String descricao;
     private double valor;
     private double imposto = 10;
+    private double taxa = 5;
+    private double taxaImportacao = 5;
 
-    public ProdutoEstadual() {
+    public ProdutoImportado() {
     }
 
-    public ProdutoEstadual(double valor) {
+    public ProdutoImportado(double valor) {
         this.valor = valor;
     }
 
-    public ProdutoEstadual(String descricao, double valor) {
+    public ProdutoImportado(String descricao, double valor) {
         this(valor);
         this.descricao = descricao;
     }
 
     public void exibirRelatorio() {
-        double valorFinal = valor + (valor * imposto) / 100;
+        double valorFinal = valor + ((valor * imposto) + (valor * taxa) + (valor * taxaImportacao)) / 100;
         System.out.println("Descricao: " + descricao +
                 "\nValor: R$" + valor +
                 "\nImposto: " + imposto + "%" +
+                "\nTaxa: " + taxa + "%" +
+                "\nTaxa de Importação: " + taxaImportacao + "%" +
                 "\nValor Final: R$" + valorFinal);
     }
 
@@ -44,4 +48,17 @@ public class ProdutoEstadual {
     public double getImposto() {
         return imposto;
     }
+
+    public void setImposto(double imposto) {
+        this.imposto = imposto;
+    }
+
+    public double getTaxa() {
+        return taxa;
+    }
+
+    public double getTaxaImportacao() {
+        return taxaImportacao;
+    }
+
 }

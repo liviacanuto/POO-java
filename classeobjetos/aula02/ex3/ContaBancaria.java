@@ -1,4 +1,4 @@
-package aula02.ex3;
+package classeobjetos.aula02.ex3;
 
 public class ContaBancaria {
     private int numero;

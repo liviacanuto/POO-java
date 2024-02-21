@@ -1,4 +1,4 @@
-package aula02.ex1;
+package classeobjetos.aula02.ex1;
 
 public class Aluno {
     private String ra;

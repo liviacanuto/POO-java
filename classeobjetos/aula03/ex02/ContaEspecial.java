@@ -1,4 +1,4 @@
-package aula03.ex02;
+package classeobjetos.aula03.ex02;
 
 public class ContaEspecial {
     private String titular;

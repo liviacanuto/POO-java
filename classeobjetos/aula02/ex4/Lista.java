@@ -1,4 +1,4 @@
-package aula02.ex4;
+package classeobjetos.aula02.ex4;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package aula03.ex01;
+package classeobjetos.aula03.ex01;
 
 public class MainEx01 {
     public static void main(String[] argStrings) {

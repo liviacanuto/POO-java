@@ -1,4 +1,4 @@
-package aula03.ex03;
+package classeobjetos.aula03.ex03;
 
 // · Um método para exibir um relatório, passando como parâmetro o custo do Kwatts.
 // Exemplo de relatório:

@@ -1,4 +1,4 @@
-package aula02.ex2;
+package classeobjetos.aula02.ex2;
 
 public class AlunoAcademia {
     private String nome;

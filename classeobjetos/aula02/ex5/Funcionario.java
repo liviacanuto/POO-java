@@ -1,4 +1,4 @@
-package aula02.ex5;
+package classeobjetos.aula02.ex5;
 
 public class Funcionario {
     private int cod;
