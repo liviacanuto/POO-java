@@ -1,18 +1,33 @@
-
-******OBS: FAREI OS METODOS MAS NAO FAREI INPUT DE USUARIO********
+3 -  Desenvolver um programa completo para controlar o cadastro de departamentos e funcionários
+de uma Universidade. Quando um departamento é cadastro, ele deve ser adicionado à Universidade
+(vetor que controla os departamentos). Quando um funcionário é cadastrado, ele deve ser
+adicionado a um departamento específico já cadastrado no sistema (pode ser consultado pelo
+código). A universidade pode ter dois tipos de funcionários: docente e técnico.
+O programa deve apresentar o seguinte menu de opções para o usuário:
+******Nao fiz entrada de dados *******
 MENU DE OPÇÕES
-    **1 – Cadastrar Departamento
-    **2 – Cadastrar Funcionário Técnico
-    **3 – Cadastrar Funcionário Docente
-    **4 – Buscar Departamento por Nome
-    **5 – Buscar Funcionário por Nome
-    
-    **6 – Listar Departamentos com Funcionários com Faixa Salarial Específica
-    **7 – Listar Funcionários com Faixa Salarial Específica
+1 – Cadastrar Departamento
+2 – Cadastrar Funcionário Técnico
+3 – Cadastrar Funcionário Docente
+4 – Buscar Departamento por Nome
+5 – Buscar Funcionário por Nome
+6 – Listar Departamentos com Funcionários com Faixa Salarial Específica
+7 – Listar Funcionários com Faixa Salarial Específica
 8 – Listar Departamentos cujo gasto total está entre uma Faixa de Valores Específica
+9 – Listar todos Funcionários da Universidade
+10 – Listar todos Departamentos da Universidade
+11 – Listar todos Departamentos da Universidade e seus Respectivos Funcionários
+12 – Listar todos Funcionários Docente
+13 – Listar todos Funcionários Técnico
+0 – Sair
 
-    **9 – Listar todos Funcionários da Universidade
-    **10 – Listar todos Departamentos da Universidade
-    **11 – Listar todos Departamentos da Universidade e seus Respectivos Funcionários
-    **12 – Listar todos Funcionários Docente
-    **13 – Listar todos Funcionários Técnico
+Da universidade é necessário armazenar somente o nome e os departamentos.
+Os dados que deverão ser armazenados para o departamento são: Codigo, Nome, Funcionários.
+Os dados que deverão ser armazenados para o funcionário técnico são: Codigo, Nome, Salário e
+Nível.
+Os dados que deverão ser armazenados para o funcionário docente são: Codigo, Nome, Salário e
+Titulação.
+Os detalhes de implementação para controle das estruturas e dos vetores não foram listados acima,
+ou seja, você deve lembrar que os vetores possuem um tamanho máximo e também um controlador
+lógico para inserir na próxima posição livre, por exemplo, um contador (cont), o qual indica o
+tamanho lógico do vetor.
