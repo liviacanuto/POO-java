@@ -1,0 +1,18 @@
+
+******OBS: FAREI OS METODOS MAS NAO FAREI INPUT DE USUARIO********
+MENU DE OPÇÕES
+    **1 – Cadastrar Departamento
+    **2 – Cadastrar Funcionário Técnico
+    **3 – Cadastrar Funcionário Docente
+    **4 – Buscar Departamento por Nome
+    **5 – Buscar Funcionário por Nome
+    
+    **6 – Listar Departamentos com Funcionários com Faixa Salarial Específica
+    **7 – Listar Funcionários com Faixa Salarial Específica
+8 – Listar Departamentos cujo gasto total está entre uma Faixa de Valores Específica
+
+    **9 – Listar todos Funcionários da Universidade
+    **10 – Listar todos Departamentos da Universidade
+    **11 – Listar todos Departamentos da Universidade e seus Respectivos Funcionários
+    **12 – Listar todos Funcionários Docente
+    **13 – Listar todos Funcionários Técnico
