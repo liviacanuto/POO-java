@@ -28,7 +28,29 @@ public class Pessoa {
     }
 
     public List<? extends Contato> getContatos(String tipo) {
-        return this.contatos.stream().filter(contato -> contato.tipo.equalsIgnoreCase(tipo)).toList();
+        if (tipo.equalsIgnoreCase("Email"))
+            return getEmails();
+        return getTelefones();
+    }
+
+    public List<Email> getEmails() {
+        List<Email> emails = new ArrayList<>();
+        for (Contato contato : contatos) {
+            if (contato instanceof Email) {
+                emails.add((Email) contato);
+            }
+        }
+        return emails;
+    }
+
+    public List<Telefone> getTelefones() {
+        List<Telefone> telefones = new ArrayList<>();
+        for (Contato contato : contatos) {
+            if (contato instanceof Telefone) {
+                telefones.add((Telefone) contato);
+            }
+        }
+        return telefones;
     }
 
     public boolean possuiEmail() {

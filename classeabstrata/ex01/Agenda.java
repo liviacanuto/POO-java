@@ -3,10 +3,19 @@ package classeabstrata.ex01;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 public class Agenda {
     private String proprietario;
     private List<Pessoa> pessoas = new ArrayList<>();
+
+    public String getProprietario() {
+        return proprietario;
+    }
+
+    public void setProprietario(String proprietario) {
+        this.proprietario = proprietario;
+    }
 
     public Agenda(String proprietario) {
         this.proprietario = proprietario;
@@ -49,37 +58,18 @@ public class Agenda {
         });
     }
 
-    /**
-     * REFAZER
-     * essa busca esta não segura, para melhorar isso fazer crie um metodo getEmail
-     * que retornem lista de email direto e nao uma lista de contato
-     * assim nao será necessário fazer casting, o que facilitará no metodo
-     * recuperarPessoaPorEmail
-     */
     public Optional<Pessoa> recuperarPessoaPorEmail(String email) {
-        return pessoas.stream()
-                .filter(pessoa -> ((List<Email>) pessoa.getContatos("email"))
-                        .stream()
-                        .filter(c -> c.getEmail().equalsIgnoreCase(email))
-                        .findAny()
-                        .isPresent())
-                .findAny();
+        Predicate<Pessoa> temEsseEmail = p -> p.getEmails().stream().filter(e -> e.getEmail().equalsIgnoreCase(email))
+                .findAny()
+                .isPresent();
+        return pessoas.stream().filter(temEsseEmail).findAny();
     }
 
-    /**
-     * REFAZER
-     * essa busca esta não segura, para melhorar isso fazer crie metodo getTelefone
-     * que retornem lista de telefone direto e nao uma lista de contato
-     * assim nao será necessário fazer casting, o que facilitará no metodo
-     * recuperarPessoaPorTelefone
-     */
     public Optional<Pessoa> recuperarPessoaPorTelefone(String telefone) {
-        return pessoas.stream()
-                .filter(pessoa -> ((List<Telefone>) pessoa.getContatos("telefone"))
-                        .stream()
-                        .filter(c -> c.getTelefone().equalsIgnoreCase(telefone))
-                        .findAny()
-                        .isPresent())
-                .findAny();
+        Predicate<Pessoa> temEsseTelefone = p -> p.getTelefones().stream()
+                .filter(t -> t.getTelefone().equalsIgnoreCase(telefone))
+                .findAny()
+                .isPresent();
+        return pessoas.stream().filter(temEsseTelefone).findAny();
     }
 }
